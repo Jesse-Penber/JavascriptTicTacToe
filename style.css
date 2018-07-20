@@ -1,0 +1,72 @@
+td {
+	z-index:1;
+	border: 2px solid #333;
+	height: 100px;
+	width: 100px;
+	text-align: center;
+	vertical-align: middle;
+	font-family: "Comic Sans MS", curse;
+	font-size: 70px;
+	cursor: pointer;
+}
+
+table {
+	border-collapse: collapse;
+	position: absolute;
+	left: 50%;
+	margin-left: -155px;
+	top: 50px;
+}
+
+/* last-child select was not working in IE, used nth-last-child and specified each cell instead to get rid of borders */
+
+table tr:first-child td {
+	border-top: 0;
+}
+
+table tr td:nth-last-child(3) {
+	border-bottom: 0;
+	border-left: 0;
+}
+
+table tr td:nth-last-child(2) {
+	border-bottom: 0;
+}
+
+table tr td:nth-last-child(1) {
+	border-bottom: 0;
+	border-right: 0;
+}
+
+table tr td:nth-last-child(4) {
+	border-right:0;
+}
+
+table tr td:nth-last-child(6) {
+	border-left:0;
+}
+
+table tr td:nth-last-child(7) {
+	border-right:0;
+}
+
+table tr td:nth-last-child(9) {
+	border-left:0;
+}
+
+.endgame {
+	display:none;
+	z-index:2;
+	width: 200px;
+	top: 120px;
+	background-color: rgba(205,133,63,0.8);
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	border-radius: 5px;
+	color: white;
+	font-size: 2em;
+	
